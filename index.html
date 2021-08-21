@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./dist/tailwind.css" />
+    <title>Contrast</title>
+  </head>
+  <body class="font-Archivo">
+    <div class="container mx-auto px-5">
+      <header class="flex justify-between items-center py-5 lg:py-10">
+        <div class="flex gap-9 items-center">
+          <img
+            src="./Assets/Contrast Logo.svg"
+            alt="Contrast Logo"
+            class="logo"
+          />
+          <a
+            href="#"
+            class="
+              text-lg text-gray-500
+              hover:text-gray-700
+              transition-all
+              hidden
+              lg:block
+            "
+            >Browse</a
+          >
+        </div>
+        <div class="hidden lg:flex items-center gap-6">
+          <div class="bg-gray-50 flex gap-4 py-4 px-6">
+            <img src="./Assets/Search.svg" alt="Search" />
+            <input
+              type="text"
+              class="
+                bg-transparent
+                text-gray-600
+                placeholder-gray-600
+                outline-none
+                text-lg
+              "
+              placeholder="Search"
+            />
+          </div>
+          <a
+            href="#"
+            class="bg-indigo-600 text-white px-6 py-4 font-bold rounded-md"
+            >Submit Resource</a
+          >
+        </div>
+
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-6 w-6 lg:hidden"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="#000"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"
+          />
+        </svg>
+      </header>
+    </div>
+  </body>
+</html>
