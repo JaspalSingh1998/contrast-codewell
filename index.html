@@ -13,9 +13,9 @@
     <link rel="stylesheet" href="./dist/tailwind.css" />
     <title>Contrast</title>
   </head>
-  <body class="font-Archivo">
+  <body class="font-Archivo text-body">
     <div class="container mx-auto px-5">
-      <header class="flex justify-between items-center py-5 lg:py-10">
+      <header class="flex justify-between items-center py-5 lg:py-10 mb-10">
         <div class="flex gap-9 items-center">
           <img
             src="./Assets/Contrast Logo.svg"
@@ -51,7 +51,7 @@
           </div>
           <a
             href="#"
-            class="bg-indigo-600 text-white px-6 py-4 font-bold rounded-md"
+            class="bg-accent text-white px-6 py-4 font-bold rounded-md"
             >Submit Resource</a
           >
         </div>
@@ -71,6 +71,45 @@
           />
         </svg>
       </header>
+      <main>
+        <section class="lg:flex lg:gap-36">
+          <div class="lg:flex-1">
+            <h1 class="font-bold text-4xl mb-2 md:text-6xl text-headline">
+              Design resources for developers.
+            </h1>
+            <p class="text-lg mb-4">
+              Explore a collection of 3400+ curated design resources, both free
+              and paid, developers can use to create landing pages quicker.
+            </p>
+            <a
+              href="#"
+              class="
+                bg-accent
+                text-white
+                px-6
+                py-4
+                font-bold
+                rounded-md
+                inline-block
+                mb-10
+              "
+              >Submit Resource</a
+            >
+            <div>
+              <p class="mb-4">Used by individuals in</p>
+              <div class="flex gap-6">
+                <img src="./Assets/Google Logo.svg" alt="Google Logo" />
+                <img src="./Assets/Discord Logo.svg" alt="Discord Logo" />
+                <img src="./Assets/Slack Logo.svg" alt="Slack Logo" />
+                <img src="./Assets/Twitter Logo.svg" alt="Twitter Logo" />
+              </div>
+            </div>
+          </div>
+          <div class="hidden lg:block lg:flex-1">
+            <img src="./Assets/Hero Image.png" alt="Hero Img" />
+          </div>
+        </section>
+      </main>
     </div>
   </body>
 </html>

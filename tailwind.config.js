@@ -5,7 +5,13 @@ module.exports = {
     fontFamily: {
       Archivo: ["Archivo", "sans-serif"],
     },
-    extend: {},
+    extend: {
+      colors: {
+        body: "#595959",
+        headline: "#1C2321",
+        accent: "#4D13D1",
+      },
+    },
   },
   variants: {
     extend: {},
