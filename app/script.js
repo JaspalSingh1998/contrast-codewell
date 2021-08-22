@@ -2,6 +2,7 @@ const closeBtn = document.querySelector("#close-button");
 const overlay = document.querySelector(".overlay");
 const modal = document.querySelector(".modal");
 const openBtns = Array.from(document.querySelectorAll(".open-modal"));
+const open = document.querySelector("#open");
 
 closeBtn.addEventListener("click", toggleModal);
 
@@ -17,4 +18,10 @@ openBtns.forEach((openBtn) => {
     modal.classList.remove("hidden");
     modal.classList.add("grid");
   });
+});
+
+open.addEventListener("click", function () {
+  overlay.classList.remove("hidden");
+  modal.classList.remove("hidden");
+  modal.classList.add("grid");
 });

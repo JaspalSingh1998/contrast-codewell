@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./Assets/Contrast Logo.svg"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./dist/tailwind.css" />
+    <title>Contrast</title>
+  </head>
+  <body class="font-Archivo text-body relative">
+    <main class="container mx-auto p-5">
+      <header class="flex justify-between items-center py-5 lg:py-10">
+        <div class="flex gap-9 items-center">
+          <a href="./index.html">
+            <img
+              src="./Assets/Contrast Logo.svg"
+              alt="Contrast Logo"
+              class="logo"
+            />
+          </a>
+          <a
+            href="./broswer.html"
+            class="
+              text-lg text-gray-500
+              hover:text-gray-700
+              transition-all
+              hidden
+              lg:block
+            "
+            >Browse</a
+          >
+        </div>
+        <div class="hidden lg:flex items-center gap-6">
+          <div class="bg-gray-50 flex gap-4 py-4 px-6">
+            <img src="./Assets/Search.svg" alt="Search" />
+            <input
+              type="text"
+              class="
+                bg-transparent
+                text-gray-600
+                placeholder-gray-600
+                outline-none
+                text-lg
+              "
+              placeholder="Search"
+            />
+          </div>
+          <a
+            href="#"
+            class="bg-accent text-white px-6 py-4 font-bold rounded-md"
+            id="open"
+            >Submit Resource</a
+          >
+        </div>
+
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-6 w-6 lg:hidden"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="#000"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"
+          />
+        </svg>
+      </header>
+      <!-- ICONS, Mockups, Fonts -->
+      <section class="mb-20">
+        <div
+          class="
+            flex flex-col
+            md:flex-row
+            md:items-center
+            justify-between
+            mb-14
+          "
+        >
+          <div class="text-lg">
+            <a
+              href="#"
+              class="font-bold text-black py-3 px-3 bg-gray-100 rounded-md"
+              >Fonts</a
+            >
+            <a href="#" class="py-3 px-3">Mockups</a>
+            <a href="#" class="py-3 px-3">Illustrations</a>
+            <a href="#" class="py-3 px-3">Icons</a>
+          </div>
+          <div class="flex items-center gap-2 bg-gray-100 rounded-md py-3 px-3">
+            <p>Sort by</p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
+          <article class="border p-9">
+            <img
+              src="./Assets/Resources/Fonts/Google Fonts.svg"
+              alt="Google Fonts"
+              class="mb-4"
+            />
+            <h3 class="font-bold text-lg text-black mb-4">Google Fonts</h3>
+            <p class="text-lg mb-6">
+              Making the web more beautiful, fast, and open through great
+              typography.
+            </p>
+            <a href="#" class="text-black font-bold text-lg underline"
+              >Visit Resource &RightArrow;</a
+            >
+          </article>
+          <article class="border p-9">
+            <img
+              src="./Assets/Resources/Fonts/MyFonts Logo.svg"
+              alt="My Fonts"
+              class="mb-4"
+            />
+            <h3 class="font-bold text-lg text-black mb-4">MyFonts</h3>
+            <p class="text-lg mb-6">
+              The #1 place to download great @font-face webfonts and desktop
+              fonts.
+            </p>
+            <a href="#" class="text-black font-bold text-lg underline"
+              >Visit Resource &RightArrow;</a
+            >
+          </article>
+          <article class="border p-9">
+            <img
+              src="./Assets/Resources/Fonts/FontSquirrel Logo.svg"
+              alt="Font Squirrel"
+              class="mb-4"
+            />
+            <h3 class="font-bold text-lg text-black mb-4">Font Squirrel</h3>
+            <p class="text-lg mb-6">
+              Font Squirrel scours the internet for high quality and
+              legitimately free fonts.
+            </p>
+            <a href="#" class="text-black font-bold text-lg underline"
+              >Visit Resource &RightArrow;</a
+            >
+          </article>
+          <article class="border p-9">
+            <img
+              src="./Assets/Resources/Fonts/Adobe Fonts Logo.svg"
+              alt="Adobe Fonts"
+              class="mb-4"
+            />
+            <h3 class="font-bold text-lg text-black mb-4">Adobe Fonts</h3>
+            <p class="text-lg mb-6">
+              Thousands of beautiful fonts to designers every day by leading
+              foundries.
+            </p>
+            <a href="#" class="text-black font-bold text-lg underline"
+              >Visit Resource &RightArrow;</a
+            >
+          </article>
+          <article class="border p-9">
+            <img
+              src="./Assets/Resources/Fonts/FontSpark Logo.svg"
+              alt="FontSpark Fonts"
+              class="mb-4"
+            />
+            <h3 class="font-bold text-lg text-black mb-4">FontSpark Fonts</h3>
+            <p class="text-lg mb-6">
+              Helping designers discover the perfect font for their next design
+              project.
+            </p>
+            <a href="#" class="text-black font-bold text-lg underline"
+              >Visit Resource &RightArrow;</a
+            >
+          </article>
+          <article class="border p-9">
+            <img
+              src="./Assets/Resources/Fonts/Better Web Type Logo.svg"
+              alt="Google Fonts"
+              class="mb-4"
+            />
+            <h3 class="font-bold text-lg text-black mb-4">
+              Better Web Type Fonts
+            </h3>
+            <p class="text-lg mb-6">
+              A web typography course for web designers and web developers by
+              Matej Latin.
+            </p>
+            <a href="#" class="text-black font-bold text-lg underline"
+              >Visit Resource &RightArrow;</a
+            >
+          </article>
+        </div>
+      </section>
+      <footer class="grid gap-12 lg:grid-cols-2 py-5 lg:py-10">
+        <div>
+          <img
+            src="./Assets/Contrast Logo.svg"
+            alt="Contrast Logo"
+            class="mb-4"
+          />
+          <p>
+            Explore a collection of 3400+ curated design resources, both free
+            and paid, developers can use to create landing pages quicker.
+          </p>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-4">
+          <div>
+            <h3 class="font-bold text-black text-lg mb-4">Resources</h3>
+            <ul class="flex flex-col gap-2">
+              <li><a href="#">Fonts</a></li>
+              <li><a href="#">Illustrations</a></li>
+              <li><a href="#">Mockups</a></li>
+              <li><a href="#">Icons</a></li>
+              <li><a href="#">Books</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="font-bold text-black text-lg mb-4">Comapny</h3>
+            <ul class="flex flex-col gap-2">
+              <li><a href="#">About</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="font-bold text-black text-lg mb-4">Support</h3>
+            <ul class="flex flex-col gap-2">
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="font-bold text-black text-lg mb-4">Sponsor</h3>
+            <ul class="flex flex-col gap-2">
+              <li><a href="#">Sponsor Resources</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </main>
+    <div
+      class="
+        fixed
+        top-0
+        left-0
+        min-h-screen min-w-full
+        bg-black
+        opacity-20
+        z-10
+        overlay
+        hidden
+      "
+    ></div>
+    <article
+      class="
+        fixed
+        top-0
+        left-0
+        min-h-screen min-w-full
+        z-20
+        hidden
+        place-items-center
+        modal
+      "
+    >
+      <div class="bg-white p-6 rounded-md md:w-2/4 relative">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-6 w-6 absolute right-4 top-4 cursor-pointer"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          id="close-button"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M6 18L18 6M6 6l12 12"
+          />
+        </svg>
+        <h2 class="font-bold text-bold text-2xl text-black mb-6">
+          Submit Resource
+        </h2>
+        <form action="#">
+          <div class="mb-4">
+            <label for="name" class="block mb-2">Resource Name</label>
+            <input
+              type="text"
+              placeholder="UI8"
+              class="bg-formInput px-6 py-2 w-full"
+            />
+          </div>
+          <div class="mb-4">
+            <label for="name" class="mb-4 flex justify-between"
+              >Resource Name <span>(Max, 150 char)</span></label
+            >
+            <textarea
+              class="bg-formInput px-6 py-4 w-full h-36 resize-none"
+              placeholder="100% curated digital marketplace with a growing library of high quality UX/UI design resources and freebies for designers."
+            ></textarea>
+          </div>
+          <div class="mb-4">
+            <label for="name" class="block mb-2">Resource Link</label>
+            <input
+              type="text"
+              placeholder="https://ui8.net"
+              class="bg-formInput px-6 py-2 w-full"
+            />
+          </div>
+          <div class="mb-4">
+            <label for="name" class="block mb-2">Resource Icon Link</label>
+            <input
+              type="text"
+              placeholder="https://scontent.faly2-2.fna.fbcd....."
+              class="bg-formInput px-6 py-2 w-full"
+            />
+          </div>
+          <div class="mb-4">
+            <label for="name" class="block mb-2">Resource Category</label>
+            <select name="category" id="category" class="w-full">
+              <option value="mockup" class="text-body">Mockup</option>
+              <option value="fonts" class="text-body">Fonts</option>
+            </select>
+          </div>
+          <a
+            href="#"
+            class="
+              inline-block
+              bg-accent
+              text-white
+              px-6
+              py-4
+              font-bold
+              rounded-md
+            "
+            >Submit Resource</a
+          >
+        </form>
+      </div>
+    </article>
+
+    <script src="./app/script.js"></script>
+  </body>
+</html>
