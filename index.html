@@ -56,7 +56,15 @@
           </div>
           <a
             href="#"
-            class="bg-accent text-white px-6 py-4 font-bold rounded-md"
+            class="
+              bg-accent
+              text-white
+              px-6
+              py-4
+              font-bold
+              rounded-md
+              open-modal
+            "
             >Submit Resource</a
           >
         </div>
@@ -97,6 +105,7 @@
                 rounded-md
                 inline-block
                 mb-10
+                open-modal
               "
               >Submit Resource</a
             >
@@ -347,6 +356,8 @@
         bg-black
         opacity-20
         z-10
+        overlay
+        hidden
       "
     ></div>
     <article
@@ -356,8 +367,9 @@
         left-0
         min-h-screen min-w-full
         z-20
-        grid
+        hidden
         place-items-center
+        modal
       "
     >
       <div class="bg-white p-6 rounded-md md:w-2/4 relative">
@@ -393,7 +405,7 @@
               >Resource Name <span>(Max, 150 char)</span></label
             >
             <textarea
-              class="bg-formInput px-6 py-4 w-full h-36"
+              class="bg-formInput px-6 py-4 w-full h-36 resize-none"
               placeholder="100% curated digital marketplace with a growing library of high quality UX/UI design resources and freebies for designers."
             ></textarea>
           </div>
@@ -436,5 +448,7 @@
         </form>
       </div>
     </article>
+
+    <script src="./app/script.js"></script>
   </body>
 </html>
