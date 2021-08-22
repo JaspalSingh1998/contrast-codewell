@@ -21,6 +21,7 @@ module.exports = {
         accent: "#4D13D1",
         cta: "#CEC3F9",
         formBtn: "#CEC3F9",
+        formInput: "#f7f7f7",
       },
     },
   },

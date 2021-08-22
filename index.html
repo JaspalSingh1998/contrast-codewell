@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="./dist/tailwind.css" />
     <title>Contrast</title>
   </head>
-  <body class="font-Archivo text-body">
+  <body class="font-Archivo text-body relative">
     <div class="container mx-auto px-5">
       <header class="flex justify-between items-center py-5 lg:py-10">
         <div class="flex gap-9 items-center">
@@ -337,5 +337,104 @@
         </footer>
       </main>
     </div>
+
+    <div
+      class="
+        fixed
+        top-0
+        left-0
+        min-h-screen min-w-full
+        bg-black
+        opacity-20
+        z-10
+      "
+    ></div>
+    <article
+      class="
+        fixed
+        top-0
+        left-0
+        min-h-screen min-w-full
+        z-20
+        grid
+        place-items-center
+      "
+    >
+      <div class="bg-white p-6 rounded-md md:w-2/4 relative">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-6 w-6 absolute right-4 top-4 cursor-pointer"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          id="close-button"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M6 18L18 6M6 6l12 12"
+          />
+        </svg>
+        <h2 class="font-bold text-bold text-2xl text-black mb-6">
+          Submit Resource
+        </h2>
+        <form action="#">
+          <div class="mb-4">
+            <label for="name" class="block mb-2">Resource Name</label>
+            <input
+              type="text"
+              placeholder="UI8"
+              class="bg-formInput px-6 py-2 w-full"
+            />
+          </div>
+          <div class="mb-4">
+            <label for="name" class="mb-4 flex justify-between"
+              >Resource Name <span>(Max, 150 char)</span></label
+            >
+            <textarea
+              class="bg-formInput px-6 py-4 w-full h-36"
+              placeholder="100% curated digital marketplace with a growing library of high quality UX/UI design resources and freebies for designers."
+            ></textarea>
+          </div>
+          <div class="mb-4">
+            <label for="name" class="block mb-2">Resource Link</label>
+            <input
+              type="text"
+              placeholder="https://ui8.net"
+              class="bg-formInput px-6 py-2 w-full"
+            />
+          </div>
+          <div class="mb-4">
+            <label for="name" class="block mb-2">Resource Icon Link</label>
+            <input
+              type="text"
+              placeholder="https://scontent.faly2-2.fna.fbcd....."
+              class="bg-formInput px-6 py-2 w-full"
+            />
+          </div>
+          <div class="mb-4">
+            <label for="name" class="block mb-2">Resource Category</label>
+            <select name="category" id="category" class="w-full">
+              <option value="mockup" class="text-body">Mockup</option>
+              <option value="fonts" class="text-body">Fonts</option>
+            </select>
+          </div>
+          <a
+            href="#"
+            class="
+              inline-block
+              bg-accent
+              text-white
+              px-6
+              py-4
+              font-bold
+              rounded-md
+            "
+            >Submit Resource</a
+          >
+        </form>
+      </div>
+    </article>
   </body>
 </html>
