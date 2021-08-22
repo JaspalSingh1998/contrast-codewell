@@ -19,6 +19,8 @@ module.exports = {
         body: "#595959",
         headline: "#1C2321",
         accent: "#4D13D1",
+        cta: "#CEC3F9",
+        formBtn: "#CEC3F9",
       },
     },
   },
