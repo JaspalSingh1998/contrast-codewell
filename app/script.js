@@ -20,8 +20,10 @@ openBtns.forEach((openBtn) => {
   });
 });
 
-open.addEventListener("click", function () {
-  overlay.classList.remove("hidden");
-  modal.classList.remove("hidden");
-  modal.classList.add("grid");
-});
+if (open !== null) {
+  open.addEventListener("click", function () {
+    overlay.classList.remove("hidden");
+    modal.classList.remove("hidden");
+    modal.classList.add("grid");
+  });
+}
