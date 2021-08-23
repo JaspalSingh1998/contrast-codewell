@@ -7,11 +7,19 @@ let url = "../Assets/Resources/Fonts/fonts.json";
 
 options.forEach((option) => {
   option.addEventListener("click", (e) => {
-    type = option.textContent;
+    removeClass();
+    type = option.textContent.trim();
     url = `../Assets/Resources/${type}/${type.toLowerCase()}.json`;
+    option.classList.add("bg-gray-200", "rounded-md", "font-bold");
     fetchResource();
   });
 });
+
+function removeClass() {
+  options.forEach((option) => {
+    option.classList.remove("bg-gray-200", "rounded-md", "font-bold");
+  });
+}
 
 async function fetchResource() {
   const response = await fetch(url, {
